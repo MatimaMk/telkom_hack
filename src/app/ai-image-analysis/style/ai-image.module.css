@@ -1,6 +1,6 @@
 .container {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%);
   display: flex;
   flex-direction: column;
 }
@@ -40,8 +40,8 @@
 }
 
 .backBtn:hover {
-  background: rgba(102, 126, 234, 0.1);
-  color: #667eea;
+  background: rgba(0, 102, 204, 0.1);
+  color: #0066cc;
 }
 
 .headerTitle h1 {
@@ -79,17 +79,17 @@
   border-radius: 1rem;
   padding: 3rem;
   text-align: center;
-  border: 2px dashed rgba(102, 126, 234, 0.3);
+  border: 2px dashed rgba(0, 102, 204, 0.3);
   transition: all 0.3s ease;
 }
 
 .uploadArea:hover {
-  border-color: rgba(102, 126, 234, 0.6);
+  border-color: rgba(0, 102, 204, 0.6);
   background: rgba(255, 255, 255, 1);
 }
 
 .uploadIcon {
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #0066cc, #0052a3);
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -122,7 +122,7 @@
 }
 
 .uploadBtn {
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #0066cc, #0052a3);
   color: white;
   border: none;
   padding: 1rem 2rem;
@@ -134,12 +134,12 @@
   align-items: center;
   gap: 0.5rem;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
 }
 
 .uploadBtn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 8px 25px rgba(0, 102, 204, 0.4);
 }
 
 .uploadHint {
@@ -173,11 +173,11 @@
 .infoCard:hover {
   transform: translateY(-5px);
   background: white;
-  box-shadow: 0 15px 35px rgba(102, 126, 234, 0.15);
+  box-shadow: 0 15px 35px rgba(0, 102, 204, 0.15);
 }
 
 .infoIcon {
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #0066cc, #0052a3);
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -232,9 +232,9 @@
 }
 
 .changeBtn {
-  background: rgba(102, 126, 234, 0.1);
-  color: #667eea;
-  border: 1px solid #667eea;
+  background: rgba(0, 102, 204, 0.1);
+  color: #0066cc;
+  border: 1px solid #0066cc;
   padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
   cursor: pointer;
@@ -243,12 +243,12 @@
 }
 
 .changeBtn:hover {
-  background: #667eea;
+  background: #0066cc;
   color: white;
 }
 
 .analyzeBtn {
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #0066cc, #0052a3);
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -259,12 +259,12 @@
   align-items: center;
   gap: 0.5rem;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
 }
 
 .analyzeBtn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 8px 25px rgba(0, 102, 204, 0.4);
 }
 
 /* Loading State */
@@ -282,7 +282,7 @@
 
 .spinning {
   animation: spin 1s linear infinite;
-  color: #667eea;
+  color: #0066cc;
 }
 
 @keyframes spin {
@@ -415,7 +415,7 @@
 }
 
 .deviceHeader svg {
-  color: #667eea;
+  color: #0066cc;
 }
 
 .deviceHeader h3 {
@@ -444,7 +444,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
-  background: rgba(102, 126, 234, 0.05);
+  background: rgba(0, 102, 204, 0.05);
   border-radius: 0.5rem;
 }
 
@@ -481,8 +481,8 @@
 }
 
 .planCard {
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05));
-  border: 1px solid rgba(102, 126, 234, 0.2);
+  background: linear-gradient(135deg, rgba(0, 102, 204, 0.05), rgba(0, 82, 163, 0.05));
+  border: 1px solid rgba(0, 102, 204, 0.2);
   border-radius: 0.75rem;
   padding: 1.5rem;
   transition: all 0.3s ease;
@@ -490,8 +490,8 @@
 
 .planCard:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15);
-  border-color: rgba(102, 126, 234, 0.4);
+  box-shadow: 0 8px 25px rgba(0, 102, 204, 0.15);
+  border-color: rgba(0, 102, 204, 0.4);
 }
 
 .planHeader {
@@ -509,7 +509,7 @@
 }
 
 .planPrice {
-  color: #667eea;
+  color: #0066cc;
   font-weight: 600;
   font-size: 1.1rem;
 }
@@ -542,7 +542,7 @@
 
 .selectPlanBtn {
   width: 100%;
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #0066cc, #0052a3);
   color: white;
   border: none;
   padding: 0.75rem;
@@ -554,7 +554,7 @@
 
 .selectPlanBtn:hover {
   transform: translateY(-1px);
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
 }
 
 /* Accessories */
@@ -579,8 +579,8 @@
 }
 
 .accessoryCard {
-  background: rgba(102, 126, 234, 0.05);
-  border: 1px solid rgba(102, 126, 234, 0.1);
+  background: rgba(0, 102, 204, 0.05);
+  border: 1px solid rgba(0, 102, 204, 0.1);
   border-radius: 0.75rem;
   padding: 1.5rem;
   transition: all 0.3s ease;
@@ -588,7 +588,7 @@
 
 .accessoryCard:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15);
+  box-shadow: 0 8px 25px rgba(0, 102, 204, 0.15);
 }
 
 .accessoryHeader {
@@ -606,7 +606,7 @@
 }
 
 .accessoryPrice {
-  color: #667eea;
+  color: #0066cc;
   font-weight: 600;
 }
 
@@ -619,9 +619,9 @@
 
 .addToCartBtn {
   width: 100%;
-  background: rgba(102, 126, 234, 0.1);
-  color: #667eea;
-  border: 1px solid #667eea;
+  background: rgba(0, 102, 204, 0.1);
+  color: #0066cc;
+  border: 1px solid #0066cc;
   padding: 0.75rem;
   border-radius: 0.5rem;
   font-weight: 500;
@@ -630,7 +630,7 @@
 }
 
 .addToCartBtn:hover {
-  background: #667eea;
+  background: #0066cc;
   color: white;
 }
 
@@ -653,7 +653,7 @@
 }
 
 .tipsSection h3 svg {
-  color: #667eea;
+  color: #0066cc;
 }
 
 .tipsList {
@@ -667,13 +667,13 @@
   align-items: flex-start;
   gap: 0.75rem;
   padding: 1rem;
-  background: rgba(102, 126, 234, 0.05);
+  background: rgba(0, 102, 204, 0.05);
   border-radius: 0.5rem;
-  border-left: 3px solid #667eea;
+  border-left: 3px solid #0066cc;
 }
 
 .tipItem svg {
-  color: #667eea;
+  color: #0066cc;
   margin-top: 0.125rem;
   flex-shrink: 0;
 }
@@ -751,7 +751,7 @@
 }
 
 .newAnalysisBtn {
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #0066cc, #0052a3);
   color: white;
   border: none;
   padding: 1rem 2rem;
@@ -759,18 +759,18 @@
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
 }
 
 .newAnalysisBtn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 8px 25px rgba(0, 102, 204, 0.4);
 }
 
 .contactBtn {
-  background: rgba(102, 126, 234, 0.1);
-  color: #667eea;
-  border: 1px solid #667eea;
+  background: rgba(0, 102, 204, 0.1);
+  color: #0066cc;
+  border: 1px solid #0066cc;
   padding: 1rem 2rem;
   border-radius: 0.75rem;
   font-weight: 500;
@@ -779,7 +779,7 @@
 }
 
 .contactBtn:hover {
-  background: #667eea;
+  background: #0066cc;
   color: white;
 }
 
