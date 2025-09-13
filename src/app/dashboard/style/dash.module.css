@@ -723,6 +723,18 @@
   color: #d97706;
 }
 
+.action-btn.orange:hover {
+  border-color: #ea580c;
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+.action-btn.teal:hover {
+  border-color: #0d9488;
+  background: #f0fdfa;
+  color: #0f766e;
+}
+
 /* Plan Card */
 .plan-details {
   background: linear-gradient(135deg, #eff6ff, #f0f9ff);

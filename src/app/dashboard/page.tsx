@@ -16,6 +16,7 @@ import {
   Calendar,
   DollarSign,
   MessageCircle,
+  Camera,
 } from "lucide-react";
 import styles from "./style/dash.module.css";
 
@@ -63,6 +64,10 @@ const Dashboard: React.FC = () => {
 
   const handleNavigateToBilling = () => {
     router.push("/billing");
+  };
+
+  const handleNavigateToAIImageAnalysis = () => {
+    router.push("/ai-image-analysis");
   };
 
   if (isLoading) {
@@ -340,6 +345,13 @@ const Dashboard: React.FC = () => {
                   >
                     <User size={20} />
                     <span>Profile</span>
+                  </button>
+                  <button
+                    onClick={handleNavigateToAIImageAnalysis}
+                    className={`${styles["action-btn"]} ${styles.teal}`}
+                  >
+                    <Camera size={20} />
+                    <span>AI Image</span>
                   </button>
                 </div>
               </div>
