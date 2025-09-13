@@ -73,24 +73,24 @@ const Billing: React.FC = () => {
       id: "BILL-2025-001",
       date: "2025-01-01",
       dueDate: "2025-01-25",
-      amount: 299.00,
+      amount: 299.0,
       status: "due",
       items: [
         {
           id: "1",
           service: "Fiber Internet",
           description: "100Mbps Uncapped Fiber",
-          amount: 199.00,
-          icon: <Wifi size={20} />
+          amount: 199.0,
+          icon: <Wifi size={20} />,
         },
         {
           id: "2",
           service: "Mobile Plan",
           description: "FreeMe 5GB Package",
-          amount: 100.00,
-          icon: <Smartphone size={20} />
-        }
-      ]
+          amount: 100.0,
+          icon: <Smartphone size={20} />,
+        },
+      ],
     };
 
     // Mock bill history
@@ -99,71 +99,71 @@ const Billing: React.FC = () => {
         id: "BILL-2024-012",
         date: "2024-12-01",
         dueDate: "2024-12-25",
-        amount: 299.00,
+        amount: 299.0,
         status: "paid",
         items: [
           {
             id: "1",
             service: "Fiber Internet",
             description: "100Mbps Uncapped Fiber",
-            amount: 199.00,
-            icon: <Wifi size={20} />
+            amount: 199.0,
+            icon: <Wifi size={20} />,
           },
           {
             id: "2",
             service: "Mobile Plan",
             description: "FreeMe 5GB Package",
-            amount: 100.00,
-            icon: <Smartphone size={20} />
-          }
-        ]
+            amount: 100.0,
+            icon: <Smartphone size={20} />,
+          },
+        ],
       },
       {
         id: "BILL-2024-011",
         date: "2024-11-01",
         dueDate: "2024-11-25",
-        amount: 299.00,
+        amount: 299.0,
         status: "paid",
         items: [
           {
             id: "1",
             service: "Fiber Internet",
             description: "100Mbps Uncapped Fiber",
-            amount: 199.00,
-            icon: <Wifi size={20} />
+            amount: 199.0,
+            icon: <Wifi size={20} />,
           },
           {
             id: "2",
             service: "Mobile Plan",
             description: "FreeMe 5GB Package",
-            amount: 100.00,
-            icon: <Smartphone size={20} />
-          }
-        ]
+            amount: 100.0,
+            icon: <Smartphone size={20} />,
+          },
+        ],
       },
       {
         id: "BILL-2024-010",
         date: "2024-10-01",
         dueDate: "2024-10-25",
-        amount: 299.00,
+        amount: 299.0,
         status: "paid",
         items: [
           {
             id: "1",
             service: "Fiber Internet",
             description: "100Mbps Uncapped Fiber",
-            amount: 199.00,
-            icon: <Wifi size={20} />
+            amount: 199.0,
+            icon: <Wifi size={20} />,
           },
           {
             id: "2",
             service: "Mobile Plan",
             description: "FreeMe 5GB Package",
-            amount: 100.00,
-            icon: <Smartphone size={20} />
-          }
-        ]
-      }
+            amount: 100.0,
+            icon: <Smartphone size={20} />,
+          },
+        ],
+      },
     ];
 
     setCurrentBill(mockCurrentBill);
@@ -202,11 +202,15 @@ const Billing: React.FC = () => {
 
   const handlePayNow = () => {
     // Simulate payment processing
-    alert("Payment functionality would be integrated with a payment gateway like PayFast or Peach Payments in a real application.");
+    alert(
+      "Payment functionality would be integrated with a payment gateway like PayFast or Peach Payments in a real application."
+    );
   };
 
   const handleDownloadBill = (billId: string) => {
-    alert(`Downloading bill ${billId}. In a real application, this would generate and download a PDF invoice.`);
+    alert(
+      `Downloading bill ${billId}. In a real application, this would generate and download a PDF invoice.`
+    );
   };
 
   if (isLoading) {
@@ -263,14 +267,24 @@ const Billing: React.FC = () => {
                   </div>
                   <div className={styles.billAmount}>
                     <span className={styles.currency}>R</span>
-                    <span className={styles.amount}>{currentBill.amount.toFixed(2)}</span>
+                    <span className={styles.amount}>
+                      {currentBill.amount.toFixed(2)}
+                    </span>
                   </div>
                 </div>
 
                 <div className={styles.billStatus}>
-                  <span className={`${styles.status} ${getStatusColor(currentBill.status)}`}>
+                  <span
+                    className={`${styles.status} ${getStatusColor(
+                      currentBill.status
+                    )}`}
+                  >
                     {getStatusIcon(currentBill.status)}
-                    {currentBill.status === "due" ? `Due ${new Date(currentBill.dueDate).toLocaleDateString()}` : currentBill.status}
+                    {currentBill.status === "due"
+                      ? `Due ${new Date(
+                          currentBill.dueDate
+                        ).toLocaleDateString()}`
+                      : currentBill.status}
                   </span>
                 </div>
 
@@ -281,9 +295,13 @@ const Billing: React.FC = () => {
                       <div className={styles.itemIcon}>{item.icon}</div>
                       <div className={styles.itemDetails}>
                         <p className={styles.itemService}>{item.service}</p>
-                        <p className={styles.itemDescription}>{item.description}</p>
+                        <p className={styles.itemDescription}>
+                          {item.description}
+                        </p>
                       </div>
-                      <div className={styles.itemAmount}>R{item.amount.toFixed(2)}</div>
+                      <div className={styles.itemAmount}>
+                        R{item.amount.toFixed(2)}
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -359,13 +377,18 @@ const Billing: React.FC = () => {
                     <div className={styles.historyDetails}>
                       <p className={styles.historyId}>{bill.id}</p>
                       <p className={styles.historyDate}>
-                        {new Date(bill.date).toLocaleDateString()} - {new Date(bill.dueDate).toLocaleDateString()}
+                        {new Date(bill.date).toLocaleDateString()} -{" "}
+                        {new Date(bill.dueDate).toLocaleDateString()}
                       </p>
                     </div>
                     <div className={styles.historyAmount}>
                       R{bill.amount.toFixed(2)}
                     </div>
-                    <div className={`${styles.historyStatus} ${getStatusColor(bill.status)}`}>
+                    <div
+                      className={`${styles.historyStatus} ${getStatusColor(
+                        bill.status
+                      )}`}
+                    >
                       {getStatusIcon(bill.status)}
                       {bill.status}
                     </div>
@@ -373,6 +396,8 @@ const Billing: React.FC = () => {
                   <button
                     onClick={() => handleDownloadBill(bill.id)}
                     className={styles.downloadBtnSmall}
+                    title="Download PDF"
+                    aria-label="Download PDF"
                   >
                     <Download size={16} />
                   </button>
