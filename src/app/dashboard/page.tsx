@@ -57,6 +57,14 @@ const Dashboard: React.FC = () => {
     router.push("/ai-chat");
   };
 
+  const handleNavigateToProfile = () => {
+    router.push("/profile");
+  };
+
+  const handleNavigateToBilling = () => {
+    router.push("/billing");
+  };
+
   if (isLoading) {
     return (
       <div
@@ -302,7 +310,10 @@ const Dashboard: React.FC = () => {
                   <h2>Quick Actions</h2>
                 </div>
                 <div className={styles["actions-grid"]}>
-                  <button className={`${styles["action-btn"]} ${styles.blue}`}>
+                  <button
+                    onClick={handleNavigateToBilling}
+                    className={`${styles["action-btn"]} ${styles.blue}`}
+                  >
                     <CreditCard size={20} />
                     <span>Pay Bill</span>
                   </button>
@@ -324,6 +335,7 @@ const Dashboard: React.FC = () => {
                     <span>Settings</span>
                   </button>
                   <button
+                    onClick={handleNavigateToProfile}
                     className={`${styles["action-btn"]} ${styles.orange}`}
                   >
                     <User size={20} />
