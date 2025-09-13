@@ -15,6 +15,7 @@ import {
   Upload,
   Calendar,
   DollarSign,
+  MessageCircle,
 } from "lucide-react";
 import styles from "./style/dash.module.css";
 
@@ -50,6 +51,10 @@ const Dashboard: React.FC = () => {
     sessionStorage.removeItem("telkom_current_user");
     sessionStorage.removeItem("telkom_session_start");
     router.push("/");
+  };
+
+  const handleNavigateToAIChat = () => {
+    router.push("/ai-chat");
   };
 
   if (isLoading) {
@@ -306,13 +311,20 @@ const Dashboard: React.FC = () => {
                     <span>Upgrade</span>
                   </button>
                   <button
+                    onClick={handleNavigateToAIChat}
                     className={`${styles["action-btn"]} ${styles.purple}`}
+                  >
+                    <MessageCircle size={20} />
+                    <span>AI Chat</span>
+                  </button>
+                  <button
+                    className={`${styles["action-btn"]} ${styles.yellow}`}
                   >
                     <Settings size={20} />
                     <span>Settings</span>
                   </button>
                   <button
-                    className={`${styles["action-btn"]} ${styles.yellow}`}
+                    className={`${styles["action-btn"]} ${styles.orange}`}
                   >
                     <User size={20} />
                     <span>Profile</span>
