@@ -1,4 +1,4 @@
-/* page.module.css */
+/* AuthComponent.module.css */
 
 .pageContainer {
   min-height: 100vh;
@@ -132,10 +132,30 @@
   box-shadow: 0 2px 10px rgba(0, 120, 212, 0.3);
 }
 
+.dashboardBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: 2px solid #0078d4;
+  border-radius: 8px;
+  background: transparent;
+  color: #0078d4;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
 .loginBtn:hover,
 .logoutBtn:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 20px rgba(0, 120, 212, 0.4);
+}
+
+.dashboardBtn:hover {
+  background: #0078d4;
+  color: white;
+  transform: translateY(-2px);
 }
 
 .mobileMenuBtn {
