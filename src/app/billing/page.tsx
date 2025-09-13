@@ -34,7 +34,7 @@ interface BillItem {
   service: string;
   description: string;
   amount: number;
-  icon: JSX.Element;
+  icon: React.ReactElement;
 }
 
 interface Bill {
